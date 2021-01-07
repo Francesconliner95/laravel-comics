@@ -1,0 +1,100 @@
+header{
+    .header-top{
+        background-color: $color1;
+        height: 25px;
+        .header-top-text{
+            width: 400px;
+            height: 100%;
+            float: right;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a{
+                color: white;
+                text-decoration: none;
+                i{
+                    color: white;
+                }
+            }
+        }
+    }
+    .header-bottom{
+        height: 115px;
+        border-bottom: solid 1px #464646;
+        .cont{
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            .logo{
+                width: 80px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                img{
+                    width: 100%;
+                }
+            }
+            nav{
+                width: 70%;
+                height: 100%;
+                ul{
+                    height: 100%;
+                    width: 100%;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: space-between;
+                    li{
+                        height: 100%;
+                        display: inline-block;
+                        // margin: 0 12px;
+                        a{
+                            height: 100%;
+                            display: inline-block;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: $color2;
+                            font-weight: bold;
+                            display: flex;
+                            align-items: center;
+                            &:hover{
+                                border-bottom: solid 5px $color1;
+                                color: $color1;
+                            }
+                            i{
+                                color: $color2;
+                            }
+                        }
+                    }
+                }
+            }
+            .search{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                position: relative;
+                input{
+                    width: 130px;
+                    height: 25px;
+                    border: none;
+                    border-bottom: solid 3px $color1;
+
+                    &::placeholder{
+                        font-size: 15px;
+                        color: $color3;
+                        font-weight: bold;
+                    }
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                i{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                    color: $color2;
+                }
+            }
+        }
+    }
+}

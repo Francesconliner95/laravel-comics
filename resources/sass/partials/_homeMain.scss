@@ -1,0 +1,28 @@
+.home-main{
+    height: 500px;
+    background-color: $color2;
+    .card-cont{
+        width: 100%;
+        height: 100%;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .card{
+            width: 170px;
+            height: 200px;
+            margin: 10px;
+            color: white;
+            .img-cont{
+                width: 100%;
+                height: 170px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 0 0;
+                }
+            }
+        }
+    }
+}
