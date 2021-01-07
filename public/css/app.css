@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -27,6 +28,7 @@ header .header-top .header-top-text {
 header .header-top .header-top-text a {
   color: white;
   text-decoration: none;
+  font-size: 12px;
 }
 
 header .header-top .header-top-text a i {
@@ -82,6 +84,7 @@ header .header-bottom .cont nav ul li a {
   font-weight: bold;
   display: flex;
   align-items: center;
+  font-size: 15px;
 }
 
 header .header-bottom .cont nav ul li a:hover {
@@ -137,6 +140,21 @@ header .header-bottom .cont .search i {
   color: #464646;
 }
 
+footer .footer-top {
+  height: 150px;
+  background-color: #0282f9;
+}
+
+footer .footer-middle {
+  height: 385px;
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+}
+
+footer .footer-bottom {
+  height: 108px;
+  background-color: #464646;
+}
+
 .jumbotron {
   width: 100%;
   height: 300px;
@@ -145,24 +163,39 @@ header .header-bottom .cont .search i {
 }
 
 .home-main {
-  height: 500px;
   background-color: #464646;
 }
 
 .home-main .card-cont {
   width: 100%;
   height: 100%;
-  padding: 20px 0;
+  padding: 40px 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.home-main .card-cont h1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translateY(-50%);
+  background-color: #0282f9;
+  padding: 10px 30px;
+  color: white;
+  text-transform: uppercase;
 }
 
 .home-main .card-cont .card {
   width: 170px;
-  height: 200px;
+  height: 230px;
   margin: 10px;
   color: white;
+}
+
+.home-main .card-cont .card:hover {
+  cursor: pointer;
 }
 
 .home-main .card-cont .card .img-cont {
@@ -177,5 +210,25 @@ header .header-bottom .cont .search i {
      object-fit: cover;
   -o-object-position: 0 0;
      object-position: 0 0;
+}
+
+.home-main .card-cont .card p {
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.home-main .card-cont button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0282f9;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+}
+
+.home-main .card-cont button:hover {
+  cursor: pointer;
 }
 

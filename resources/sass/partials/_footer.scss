@@ -1,0 +1,14 @@
+footer{
+    .footer-top{
+        height: 150px;
+        background-color: $color1;
+    }
+    .footer-middle{
+        height: 385px;
+        background-image: url("../../../public/images/footer-bg.jpg");
+    }
+    .footer-bottom{
+        height: 108px;
+        background-color: $color2;
+    }
+}
