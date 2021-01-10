@@ -26,3 +26,15 @@ Route::get('/', function () {
 
     return view('home', $data);
 })->name('homepage');
+
+Route::get('/comic/{id}', function ($id) {
+
+    $comics = config('comics');
+    $fumetto = $comics[$id];
+
+    $data = [
+        'comic'=> $fumetto
+        ];
+
+    return view('single', $data);
+})->name('comic-details');

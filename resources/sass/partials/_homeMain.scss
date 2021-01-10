@@ -26,21 +26,25 @@
             &:hover{
                 cursor: pointer;
             }
-            .img-cont{
-                width: 100%;
-                height: 170px;
-                img{
+            a{
+                color: white;
+                text-decoration: none;
+                .img-cont{
                     width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: 0 0;
+                    height: 170px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: 0 0;
+                    }
                 }
-            }
-            p{
-                text-transform: uppercase;
-                padding: 10px 0;
-                font-size: 14px;
-                font-weight: bold;
+                p{
+                    text-transform: uppercase;
+                    padding: 10px 0;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
             }
         }
         button{
@@ -53,6 +57,30 @@
             &:hover{
                 cursor: pointer;
             }
+        }
+    }
+    .buy-menu{
+        height: 150px;
+        background-color: $color1;
+        .items-cont{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            font-weight: bold;
+            a{
+                height: 100%;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                img{
+                    width: 40px;
+                    margin-right: 10px;
+                }
+            }
+
         }
     }
 }

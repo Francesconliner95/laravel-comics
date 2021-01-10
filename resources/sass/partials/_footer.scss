@@ -1,14 +1,77 @@
 footer{
-    .footer-top{
-        height: 150px;
-        background-color: $color1;
+    position: relative;
+    .image-bg{
+        width: 550px;
+        height: 385px;
+        position: absolute;
+        top: 0px;
+        right: 50px;
+        background-image: url("../../../public/images/dc-logo-bg.png");
+        background-size: cover;
+        background-position: center;
     }
-    .footer-middle{
+    .footer-top{
         height: 385px;
         background-image: url("../../../public/images/footer-bg.jpg");
+        // background-image: url({{ asset('images/footer-bg.jpg') }});
+        .footer-section-cont{
+            width: 35%;
+            display: flex;
+            justify-content: space-between;
+            .footer-section{
+                width: 33%;
+                h4{
+                    font-size: 22px;
+                    color: white;
+                    padding: 10px 0;
+                }
+                a{
+                    display: block;
+                    color: $color2;
+                    text-decoration: none;
+                    font-size: 13px;
+                    padding: 2px 0;
+                    font-weight: bold;
+
+                    &:hover{
+                        color: $color1;
+                    }
+                }
+            }
+        }
+        .footer-copyright{
+            width: 50%;
+            padding-top: 15px;
+            span{
+                color: $color2;
+                font-size: 12px;
+                a{
+                    color: $color1;
+                    text-decoration: none;
+                }
+            }
+        }
     }
     .footer-bottom{
         height: 108px;
         background-color: $color2;
+        .footer-bottom-cont{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button{
+                border: solid 3px $color1;
+                padding: 10px 10px;
+                background-color: $color2;
+                color: white;
+                font-size: 20px;
+                &:hover{
+                    background-color: $color1;
+                    cursor: pointer;
+                }
+            }
+        }
+
     }
 }
